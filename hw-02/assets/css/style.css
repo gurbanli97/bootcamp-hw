@@ -99,6 +99,8 @@ header {
 }
 
 .about-info img {
+    width: 140px;
+    height: 140px;
     margin-top: 30px;
     float: left;
     margin-right: 20px;
@@ -136,7 +138,7 @@ aside {
     margin-left: 40px;
     background-color: #fff;
     border: 1px solid #777;
-    max-height: 200px;
+    max-height: 160px;
     max-width: 270px;
     width: 100%;
 }
@@ -218,7 +220,7 @@ form button {
     align-items: flex-end;
     width: 120px;
     height: 120px;
-    background-image: url('https://via.placeholder.com/120');
+    background-image: url('http://via.placeholder.com/140x140');
 }
 
 .port-img h3 {
@@ -236,10 +238,21 @@ form button {
     justify-content: center;
 }
 
-.social img {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+.social i {
+    font-size: 60px;
+}
+
+#linkedin {
+    color: #0e76a8;
+}
+#git {
+    color: #000;
+}
+#stack {
+    color: #F48024;
+}
+#linkedin:hover, #git:hover, #stack:hover {
+    color: #4FA9A4;
 }
 
 .social a:not(:last-child) {
@@ -276,8 +289,17 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
+
+    form button {
+        margin: auto;
+        margin-top: 20px;
+    }
     .multicols .container {
         flex-direction: column;
+    }
+
+    .contact-info {
+        text-align: center;
     }
 
     aside {
@@ -289,6 +311,7 @@ footer {
     .mob-nav {
         display: flex;
     }
+    
     .about-info img {
         float: none;
         margin-right: 0;

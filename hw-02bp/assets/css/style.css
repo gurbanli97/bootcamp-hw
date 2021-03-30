@@ -105,6 +105,8 @@ header {
 }
 
 .about-info img {
+    width: 140px;
+    height: 140px;
     margin-top: 30px;
     float: left;
     margin-right: 20px;
@@ -222,7 +224,7 @@ form button {
     align-items: flex-end;
     width: 120px;
     height: 120px;
-    background-image: url('https://via.placeholder.com/120');
+    background-image: url('http://via.placeholder.com/140x140');
 }
 
 .port-img h3 {
