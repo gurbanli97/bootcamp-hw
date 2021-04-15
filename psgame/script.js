@@ -44,20 +44,16 @@ leftGuesses()
 
 
 window.onkeypress = function(e) {
+    var choice = e.key;
+    if(alreadyGuessed.indexOf(choice) === -1) {
+        alreadyGuessed.push(choice)
+    }else {
+        return
+    }
 
     guesses--
-
-    var choice = e.key;
-
-    alreadyGuessed.push(choice)
-
-
-    
     updateGuesses()
     leftGuesses()
-
-    
-       
     
     if(choice === newLetter) {
         wins++
