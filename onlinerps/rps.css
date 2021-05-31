@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+   background-color: #932a26;
+}
+
+.top {
+    width: 100%;
+    margin: auto;
+}
+
+.top h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: yellow;
+}
+
+.main-wrapper,
+.game-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.create-inner,
+.join-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-inner input,
+.join-inner input {
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+
+.create-inner a,
+.join-inner a {
+    background-color: yellowgreen;
+    line-height: 40px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.create-inner a:hover,
+.join-inner a:hover{
+    background-color: orange;
+}
+
+
+.game-wrapper {
+    display: none;
+}
+.game {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.game-inner{
+    padding: 30px 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.player1-creds,
+.player2-creds {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.player1,
+.player2 {
+    padding: 20px;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 12px;
+}
+
+.player1 img,
+.player2 img {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.rock,
+.paper,
+.scissors {
+    margin: auto;
+    width: 100px;
+    box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.75);
+}
+
+.guess.rock.active,
+.guess.paper.active,
+.guess.scissors.active {
+    box-shadow: 6px 6px 6px 6px rgba(154,205,50,0.75);
+}
+
+.chat {
+    width: 600px;
+    margin: auto;
+}
+
+.chat-inner {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-inner input {
+    margin: auto;
+    width: 300px;
+    height: 40px;
+}
+
+
+.chatbox {
+    background-color: #fff;
+    border-radius: 12px;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+.chat-inner button {
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: yellowgreen;
+    color: #fff;
+    height: auto;
+    padding: 10px;
+    border-radius: 12px;
+    width: 100px;
+    outline: none;
+}
+
+.chatMessage {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.chatMessage.p2 {
+    color: yellowgreen
+}
+
+.chatMessage.p1 {
+    color: #932a26;
+}

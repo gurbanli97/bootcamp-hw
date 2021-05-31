@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="./rps.css">
+</head>
+<body>
+    <section class="top">
+        <h1>Online RPS Game</h1>
+    </section>
+
+<div class="main-wrapper">
+    <section class="create">
+        <div class="create-inner">
+            <input type="text" id="createUser" placeholder="Enter your name">
+            <input type="text" id="createRoom" placeholder="Enter room name to create"  >
+            <a href="#" id="createBtn">Create New Room</a>
+        </div>
+    </section>
+
+    <section class="join">
+        <div class="join-inner">
+            <input type="text" id="joinUser" placeholder="Enter your name" >
+            <input type="text" id="joinRoom" placeholder="Enter existing room name to join" >
+            <a href="#" id="joinBtn">Join Existing Room</a>
+        </div>
+    </section>
+</div>
+
+
+<div class="game-wrapper">
+    <section class="game">
+        <div class="game-inner">
+            <div class="player1">
+            <div class="player1-creds">
+                <h1 id="player1Name">Player1 Name</h1>
+                <span id="wins">Wins: 0</span>
+                <span id="losses">Losses: 0</span>
+                <span id="draws">Draws: 0</span>
+
+            </div>
+            <div class="player1-guess">
+
+                <div class="guess rock" data-value="Rock">
+                    <img src="./img/rock.jpeg" alt="">
+                </div>
+                <div class="guess paper" data-value="Paper">
+                    <img src="./img/paper.jpeg" alt="">
+                </div>
+                <div class="guess scissors" data-value="Scissors">
+                    <img src="./img/scissors.jpeg" alt="">
+                </div>
+
+
+            </div>
+            </div>
+
+            <div class="chat">
+                <div class="chat-inner">
+                    <div class="chatbox"></div>
+            
+                    <input id="chatInput" type="text" placeholder="Enter message here..">
+                    <button id="send">Click to send message</button>
+                </div>
+            </div>
+
+
+            <div class="player2">
+                <div class="player2-creds">
+                <h1 id="player2Name">Waiting for  second player..</h1>
+                <span id="wins">Wins: 0</span>
+                <span id="losses">Losses: 0</span>
+                <span id="draws">Draws: 0</span>
+    
+                </div>
+                <div class="player2-guess" >
+
+                    <div class="guess rock" data-value="Rock">
+                        <img src="./img/rock.jpeg" alt="">
+                    </div>
+                    <div class="guess paper" data-value="Paper">
+                        <img src="./img/paper.jpeg" alt="">
+                    </div>
+                    <div class="guess scissors" data-value="Scissors">
+                        <img src="./img/scissors.jpeg" alt="">
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+    <script src="./rps.js"></script>
+</body>
+</html>
